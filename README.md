@@ -24,7 +24,7 @@
 
 
 <ul>
-  <li><strong>Run Command:</strong> node index.js </li>
+ 
   <li><strong>Create Question:</strong> http://localhost:8000/questions/create </li>
   <li><strong>Create Option:</strong> http://localhost:8000/questions/:id/options/create </li>
   <li><strong>Delete a Question:</strong> http://localhost:8000/questions/:id/delete </li>
