@@ -1,7 +1,7 @@
 # poll-api
 
-# Ecom-API
-<h1>API for E-Commerce platform</h1>
+
+<h1>API for Polling System platform</h1>
 
 <h3>Designed an API for Polling System </h3>
 
