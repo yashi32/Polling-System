@@ -1,4 +1,4 @@
-//this file is used to set connection with the database
+//Requiring modules 
 const mongoose= require('mongoose');
 
 mongoose.set('useNewUrlParser', true);
@@ -6,7 +6,7 @@ mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
 mongoose.set('useUnifiedTopology', true);
 
-//name of the db is products-api
+//Making connection 
 mongoose.connect('mongodb://localhost/poll-api');
 
 const db=mongoose.connection;
