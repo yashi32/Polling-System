@@ -16,7 +16,7 @@ module.exports.addOption = async function(req,res){
                 votes:req.body.votes,
                 question:req.params.id
             });
-            // console.log(option);
+            
             option.link_to_vote="http://localhost:8000/options/"+option.id+"/add_vote";
             option.save();
             question.options.push(option);
