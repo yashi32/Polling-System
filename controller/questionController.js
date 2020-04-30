@@ -17,7 +17,7 @@ module.exports.addQuestion = function(req,res){
 };
 
 
-
+//view question Controller
 module.exports.viewQuestion= async function(req,res){
 
     let question= await Question.findById(req.params.id)
@@ -26,7 +26,7 @@ module.exports.viewQuestion= async function(req,res){
     return res.json({question:question});
 }
 
-
+//Delete a question controller
 module.exports.delQuestion = async function(req,res){
     try {
         let question= await Question.findById(req.params.id);
@@ -34,7 +34,7 @@ module.exports.delQuestion = async function(req,res){
         await Option.deleteMany({question:req.params.id});
         
         return res.json({
-            message: "Question and Associated Options Deleted Sucessfully!",
+            message: "Question and Options Deleted !",
         });
     } catch (error) {
         console.log(err);
